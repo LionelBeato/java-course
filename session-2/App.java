@@ -11,7 +11,6 @@
 
 public class App {
 
-
     /**
      * 
      * Below is a function
@@ -23,9 +22,26 @@ public class App {
         System.out.println("Hello from a function!");
     }
 
+    public static int addTwoNumbers(int x, int y) {
+        return x + y; 
+    }
+
+
+
 
 
     public static void main(String[] args) {
+
+        // var myString = "hello"; 
+        String myString = "hello"; 
+        char myChar = 'h'; 
+        int myInt = 5; 
+        long myLong = 50000000;
+        float myFloat = 2.5f; 
+        double myDouble = 2.5; 
+
+        printHello();
+        System.out.println(addTwoNumbers(5, 10));
 
         /**
          * 
@@ -54,9 +70,9 @@ public class App {
          * 
          * 
          */
-        for (int num : numArr) {
-            System.out.println(num);
-        }
+        // for (int num : numArr) {
+        //     System.out.println(num);
+        // }
 
 
         /**
@@ -71,11 +87,17 @@ public class App {
          * in truth countless. The reason? Every class defines a type. 
          * 
          */
+        // Animal myAnimal = new Animal(); 
+        // myAnimal.speak(); 
+
         Animal myAnimal = new Animal(); 
         myAnimal.speak(); 
+
     }
 
 }
+
+
 
 /**
  * 

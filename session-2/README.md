@@ -15,5 +15,7 @@ Executable jars need their entrypoints defined in a manifest. In our app, that m
 javac *.java
 # below bundles our classes into a jar
 jar cfm app.jar manifest.txt *.class
+# run the jar file
+java -jar app.jar
 
 ```
