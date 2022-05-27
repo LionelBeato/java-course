@@ -29,9 +29,13 @@ public class Animal {
      * the vast majority of them are referred to as methods 
      * 
      *  */ 
-    public void speak() {
-        System.out.println("This animal spoke!");
+    public String speak() {
+        String speech = "This animal spoke!"; 
+        return speech; 
     }
 
-    
+    public String otherSpeak() {
+        return "I spoke too!"; 
+    }
+
 }

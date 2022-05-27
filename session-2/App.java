@@ -26,8 +26,13 @@ public class App {
         return x + y; 
     }
 
+    
+    public static int subtractFromNumber(int x, int y) {
+        return x - y; 
+    }
 
-
+    // whenever a function is on an Object
+    // its called a method
 
 
     public static void main(String[] args) {
@@ -40,8 +45,17 @@ public class App {
         float myFloat = 2.5f; 
         double myDouble = 2.5; 
 
-        printHello();
-        System.out.println(addTwoNumbers(5, 10));
+        // printHello();
+        // System.out.println(addTwoNumbers(5, 10));
+
+        var result = addTwoNumbers(10, 10);
+
+    
+        System.out.println(result); 
+
+        var subResult = subtractFromNumber(20, 15); 
+
+        System.out.println(subResult); 
 
         /**
          * 
@@ -91,7 +105,11 @@ public class App {
         // myAnimal.speak(); 
 
         Animal myAnimal = new Animal(); 
-        myAnimal.speak(); 
+        // myAnimal.speak(); 
+       myAnimal.otherSpeak();
+
+        Animal myElephant = new Animal(); 
+        // myElephant.speak();
 
     }
 
